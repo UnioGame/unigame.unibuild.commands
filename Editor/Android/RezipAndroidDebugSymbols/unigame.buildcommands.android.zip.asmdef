@@ -1,8 +1,13 @@
 {
     "name": "unigame.buildcommands.android.zip",
     "rootNamespace": "",
-    "references": ["GUID:8e4577c9194c10845984cf27eb974fd1","GUID:f0321ba97c62c974b82a7fc7c1d544f9"],
-    "includePlatforms": [],
+    "references": [
+        "GUID:8e4577c9194c10845984cf27eb974fd1",
+        "GUID:f0321ba97c62c974b82a7fc7c1d544f9"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
