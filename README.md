@@ -32,9 +32,15 @@ Contents:
 
 
 
-## Android Commands
+# Android Commands
 
-### Android Debug Symbols Rezip 
+# Addressable Importer Support
+
+Original Package: https://github.com/favoyang/unity-addressable-importer
+
+**AddressableImporterRefreshAssets** - Allow you to refresh addressable by defined rules
+
+## Android Debug Symbols Rezip 
 
 Rezip your debug symbols into smaller one with only selected android architectures
 

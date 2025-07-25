@@ -4,7 +4,7 @@
   "displayName": "UniBuild Commands",
   "description": "Additional Commands for Build Pipeline",
   "unity": "2023.1",
-  "version": "2025.0.8",
+  "version": "2025.0.9",
   "homepage": "https://github.com/UniGameTeam/UniBuild#readme",
   "keywords": [
     "Build",

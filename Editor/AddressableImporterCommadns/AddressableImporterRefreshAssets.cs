@@ -18,8 +18,6 @@ namespace UniGame.BuildCommands.Editor
         public List<string> reimportPaths = new List<string>() {
             "Assets"
         };
-
-        public bool applyCustomRules = true;
         
         public override void Execute(IUniBuilderConfiguration buildParameters)
         {
@@ -31,7 +29,7 @@ namespace UniGame.BuildCommands.Editor
 #endif
         public void RefreshAddressables()
         {
-            AddressableImporter.FolderImporter.ReimportFolders(reimportPaths,applyCustomRules);
+            AddressableImporter.FolderImporter.ReimportFolders(reimportPaths,showConfirmDialog:false);
         }
     }
 }
