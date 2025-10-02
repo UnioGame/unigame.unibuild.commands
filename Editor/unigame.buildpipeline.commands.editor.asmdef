@@ -35,6 +35,11 @@
             "name": "com.codewriter.triinspector",
             "expression": "",
             "define": "TRI_INSPECTOR"
+        },
+        {
+            "name": "com.unigame.fluentftp",
+            "expression": "",
+            "define": "ENABLE_FTP_UNICOMMANDS"
         }
     ],
     "noEngineReferences": false

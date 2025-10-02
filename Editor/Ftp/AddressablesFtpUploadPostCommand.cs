@@ -6,11 +6,14 @@
     using System.Linq;
     using System.Net;
     using AddressableTools.Editor;
-    using FluentFTP;
     using global::UniGame.UniBuild.Editor;
     using UniModules;
     using UnityEngine;
     using UnityEngine.Scripting.APIUpdating;
+    
+#if ENABLE_FTP_UNICOMMANDS
+    using FluentFTP;
+#endif
 
 #if ODIN_INSPECTOR
     using Sirenix.OdinInspector;
@@ -103,6 +106,7 @@
             Debug.Log($"Upload from: {buildFolder}");
             Debug.Log($"Upload to: {targetUploadDirectory}");
 
+#if ENABLE_FTP_UNICOMMANDS
             var ftpClient = new FtpClient(ftpUrl);
             ftpClient.Credentials = new NetworkCredential(userName, password, ftpUrl);
             ftpClient.Connect();
@@ -130,8 +134,10 @@
             var uploadResult = isValidResult ? "successfully" : "failed";
 
             Debug.Log($"BuildCommand: {Name} Upload Complete. result: {uploadResult}");
+#endif
         }
 
+#if ENABLE_FTP_UNICOMMANDS
         private void CreateMissingDirectories(string serverPath, IFtpClient client)
         {
             var pathItems = serverPath.SplitPath();
@@ -157,5 +163,26 @@
                 $"Uploading: Source: {progress.LocalPath} Target: {progress.RemotePath}";
             Debug.Log(progressLog);
         }
+#endif
     }
+    
+    #if !ENABLE_FTP_UNICOMMANDS
+
+    public enum FtpRemoteExists
+    {
+        Overwrite,
+        Append,
+        Skip,
+    }
+    
+    public enum FtpFolderSyncMode
+    {
+        Update,
+        Append,
+        Skip,
+        Overwrite,
+    }
+    
+    #endif
+    
 }
