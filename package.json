@@ -20,7 +20,6 @@
     "com.unigame.localization": "https://github.com/UnioGame/unigame.localization.git",
     "com.unigame.rx": "https://github.com/UnioGame/unigame.rx.git",
     "com.cysharp.unitask" : "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
-    "com.unigame.unibuildpipeline" : "https://github.com/UnioGame/unigame.buildpipeline.git",
-    "com.unigame.symlinker" : "https://github.com/UnioGame/Resource.SymLinker.git"
+    "com.unigame.unibuildpipeline" : "https://github.com/UnioGame/unigame.buildpipeline.git"
   }
 }

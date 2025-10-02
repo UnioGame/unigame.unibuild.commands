@@ -6,14 +6,12 @@ Add to your project manifiest by path [%UnityProject%]/Packages/manifiest.json n
 ```json
 {
   "dependencies": {
-      "com.unigame.buildpipeline.commands" : "https://github.com/UnioGame/UnioGame.UniBuildCommands.git",
-      "com.littlebigfun.addressable-importer": "https://github.com/UnioGame/unity-addressable-importer.git",
-      "com.unigame.unityspreadsheets" : "https://github.com/UnioGame/UniGame.GoogleSpreadsheetsImporter.git",
-      "com.unigame.coremodules": "https://github.com/UnioGame/UniGame.CoreModules.git",
-      "com.unigame.fluentftp": "https://github.com/UnioGame/FuentFTP.git",
-      "com.unigame.unibuildpipeline" : "https://github.com/UnioGame/UniGame.UniBuild.git",
-      "com.unigame.google.api.v4" :  "https://github.com/UnioGame/google.api.v4.git",
-      "com.unigame.symlinker" : "https://github.com/UnioGame/UniGame.SymLinker.git"
+    "com.littlebigfun.addressable-importer": "https://github.com/favoyang/unity-addressable-importer.git",
+    "com.unigame.unicore": "https://github.com/UnioGame/unigame.core.git",
+    "com.unigame.localization": "https://github.com/UnioGame/unigame.localization.git",
+    "com.unigame.rx": "https://github.com/UnioGame/unigame.rx.git",
+    "com.cysharp.unitask" : "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+    "com.unigame.unibuildpipeline" : "https://github.com/UnioGame/unigame.buildpipeline.git"
   }
 }
 ```
@@ -27,6 +25,13 @@ Contents:
 - Distribution Commands
 - WebRequest Commands
 - FTP Commands
+
+To enable FTP support install
+
+```
+    "com.unigame.fluentftp": "https://github.com/UnioGame/FuentFTP.git",
+```
+
 - AddressablesImporter Commands
 - Android Commands
 
