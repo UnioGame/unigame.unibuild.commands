@@ -1,10 +1,10 @@
 {
   "name": "com.unigame.buildpipeline.commands",
   "author": "UniGame",
-  "displayName": "UniBuild Commands",
+  "displayName": "UniGame Build Commands",
   "description": "Additional Commands for Build Pipeline",
   "unity": "2023.1",
-  "version": "2025.0.10",
+  "version": "2025.0.11",
   "homepage": "https://github.com/UniGameTeam/UniBuild#readme",
   "keywords": [
     "Build",
